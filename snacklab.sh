@@ -48,6 +48,7 @@ case $anonimous in
 	1)
 		sleep 1
 		clear
+		cd files
 		bash menu_1
 		;;
 
@@ -58,32 +59,38 @@ case $anonimous in
 		;;
 	3)
 		sleep 1
+		cd files
 		clear
 		bash menu_3
 		;;
 	4)
 		sleep 1
 		clear
+		cd files
 		bash menu_4
 	        ;;
 	5)
 		sleep 1
 		clear
+		cd files
 		bash menu_5
 		;;
 	6)
 		sleep 1
 		clear
+		cd files
 		bash menu_6
 		;;
 	7)	
 		sleep 1
 		clear
+		cd files
 		bash menu_7
 		;;
 	8)
 		sleep 1
 		clear
+		cd files
 		bash menu_8
 		;;
 	9)
@@ -94,21 +101,25 @@ case $anonimous in
 	10)
 		sleep 1
 		clear
+		cd files
 		bash menu_10
 		;;
 	11)
 		sleep 1
 		clear
+		cd files
 		bash menu_11
 		;;
 	12) 
 		sleep 1
 		clear
+		cd files
 		bash menu_12
 		;;
 	13)
 		sleep 1
 		clear
+		cd files
 		bash menu_13
 		;;
 	14)
