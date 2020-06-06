@@ -1,0 +1,126 @@
+#!/data/data/con.termux/files/usr/bin/bash
+
+figlet termux comandos
+printf "
+ls
+Lista las carpetas/archivos
+
+Ejem:
+ls
+carpeta carpeta2 carpeta3 carpeta4
+archivo archivo2
+
+cd (tucarpeta)
+Selecciona carpetas SOLO CARPETAS
+
+Ejem:
+cd micarp
+
+ls
+
+archivo1 archivo2
+
+pwd
+Muestra la ruta actual
+
+Ejem:
+pwd
+/data/data/com.termux/files/home/termux
+
+cat
+Permite leer(ver) el contenido de un archivo  SOLO ARCHIVOS
+
+Ejem:
+cat miarchivo.txt
+Aqui se mostrara el contenido...
+Nota:
+Usa el comando cat --help
+Para ver todas las opciones
+cat admite todos los formatos(.sh, .py, .txt) etc
+
+apt update
+Actualiza lista de paquetes disponibles.
+
+apt upgrade
+Actualiza paquetes obsoletos.
+
+apt search
+Muestra paquetes disponibles
+
+Ejem:  apt search nano.
+(nano es un paquete)
+
+apt install
+Instalar un paquete.
+
+Ejem:  apt install nano.
+
+Podemos instalar varios paquetes: Ejem: apt install nano nmap python2 -y.
+
+apt show
+Información sobre un paquete.
+
+Ejem:  apt show nano
+
+apt list
+Muestra todos los paquetes disponibles.
+
+apt list –installed
+Muestra todos los paquetes instalados.
+
+apt remove
+Elimina un paquete.
+
+Ejem:  apt remove nano.
+
+cd ..
+Retrocede de directorio.
+
+mkdir
+Crear directorio.
+
+Ejem: mkdir carpeta
+
+mv
+Mueve una carpeta/archivo
+
+Ejem: mv archivo lugardedestino
+
+Nota:
+Usa el comando: mv --help
+Para ver mas opciones
+Para mover carpetas tienes que usar la opción -r
+mv -r carpeta lugardestino
+
+cp
+Copia archivos/carpetas
+
+Ejem: cp archivo.txt lugardestino
+
+Nota:
+Para mover carpetas
+Usa el comando: cp -r carpeta lugardestino"
+printf "\e[1;32m
+__________________________________________\e[0m "
+printf "
+
+       [ 1 ] Continuar.
+       [ 2 ] Menu principal.
+       [ 3 ] Salir."
+
+read -p "
+
+opcion >> " etc
+
+case $etc in
+	1)
+		bash snacklab.sh
+		;;
+	2)
+		bash snacklab.sh
+		;;
+	3)
+		exit
+		;;
+		
+esac

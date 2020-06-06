@@ -1,0 +1,10 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+figlet Descargador de paginas
+echo "
+
+
+
+"
+read -p "INGRESE URL : " open
+wget -B URL $open
