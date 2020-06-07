@@ -1,122 +1,141 @@
 #!/data/data/con.termux/files/usr/bin/bash
 
-figlet termux comandos
+figlet comandos
 printf "
-ls
-Lista las carpetas/archivos
+\e[1;32m
+ls\e[1;90m
 
-Ejem:
-ls
-carpeta carpeta2 carpeta3 carpeta4
-archivo archivo2
+Listar el contenido de la carpteta."
+sleep 0.4
+printf "
+\e[1;32m
+pwd\e[1;90m
 
-cd (tucarpeta)
-Selecciona carpetas SOLO CARPETAS
-
-Ejem:
-cd micarp
-
-ls
-
-archivo1 archivo2
-
-pwd
-Muestra la ruta actual
-
-Ejem:
-pwd
-/data/data/com.termux/files/home/termux
-
+Muestra la ruta en en la carpeta en
+la donde te encuentras."
+sleep 0.4
+printf "
+\e[1;32m
 cat
-Permite leer(ver) el contenido de un archivo  SOLO ARCHIVOS
-
-Ejem:
-cat miarchivo.txt
-Aqui se mostrara el contenido...
-Nota:
-Usa el comando cat --help
-Para ver todas las opciones
-cat admite todos los formatos(.sh, .py, .txt) etc
-
+\e[1;90m
+Permite leer(ver) el contenido de 
+un archivo."
+sleep 0.4                    
+printf "
+\e[1;32m
 apt update
-Actualiza lista de paquetes disponibles.
+\e[1;90m
+Supervisa la lista de nuevos
+paquetes."
+sleep 0.4                          
+printf "
+\e[1;32m
+apt upgrade\e[1;90m
 
-apt upgrade
-Actualiza paquetes obsoletos.
+Instala(actualiza) los nuevos 
+paquetes supervisados."
+sleep 0.4                          
+printf "
+\e[1;32m
+apt search\e[1;90m
 
-apt search
-Muestra paquetes disponibles
-
-Ejem:  apt search nano.
-(nano es un paquete)
-
-apt install
-Instalar un paquete.
-
-Ejem:  apt install nano.
-
-Podemos instalar varios paquetes: Ejem: apt install nano nmap python2 -y.
-
-apt show
-Información sobre un paquete.
-
-Ejem:  apt show nano
-
+Busca y muestra los paquetes 
+disponibles."
+sleep 0.4                  
+printf "
+\e[1;32m
+apt install  < nombre del paquete >
+\e[1;90m
+Instala un paquete.
+Tambien podemos instalar varios 
+paquetes: Ejem: apt install nano
+curl perl vim wget python2 -y."
+sleep 0.4               
+printf "
+\e[1;32m
+apt show  < nombre del paquete >
+\e[1;90m
+Muestra la información sobre un
+paquete instalado."
+sleep 0.4                           
+printf "
+\e[1;32m
 apt list
-Muestra todos los paquetes disponibles.
-
+\e[1;90m
+Muestra todos los paquetes 
+disponibles."
+sleep 0.4                 
+printf "
+\e[1;32m
 apt list –installed
-Muestra todos los paquetes instalados.
-
-apt remove
-Elimina un paquete.
-
-Ejem:  apt remove nano.
-
+\e[1;90m
+Muestra todos los paquetes que 
+ya han sido instalados."
+sleep 0.4                    
+printf "
+\e[1;32m
+apt remove  < nombre del paquete >
+\e[1;90m
+Elimina un achivo."
+sleep 0.4                               
+printf "
+\e[1;32m
+apt remove -r 
+\e[1;90m
+elimina un directorio."
+sleep 0.4
+printf "
+\e[1;32m
 cd ..
-Retrocede de directorio.
+\e[1;90m
+Retrocede un directorio."
+sleep 0.4
+printf "
+\e[1;32m
+mkdir  < nombre de la carpeta >
+\e[1;90m
+Crea crea un nuevo directorio
+o carpeta."
+sleep 0.4                                     
+printf "
+\e[1;32m
+mv  < nombre >  < ruta >
+\e[1;90m
+Mueve una carpeta/archivo.
 
-mkdir
-Crear directorio.
-
-Ejem: mkdir carpeta
-
-mv
-Mueve una carpeta/archivo
-
-Ejem: mv archivo lugardedestino
+Ejem: mv carpeta1 /data/data/
+com.termux/files/home.
+pones ala ruta donde quieres 
+llevar o mover tu directorio
+o archivo.
 
 Nota:
 Usa el comando: mv --help
-Para ver mas opciones
-Para mover carpetas tienes que usar la opción -r
-mv -r carpeta lugardestino
-
-cp
-Copia archivos/carpetas
-
-Ejem: cp archivo.txt lugardestino
-
-Nota:
-Para mover carpetas
-Usa el comando: cp -r carpeta lugardestino"
+Para ver su menu de ayuda."
+sleep 0.4
+printf "
+\e[1;32m
+cp  < nombre del archivo >
+\e[1;90m
+Copia archivos y carpetas."
 printf "\e[1;32m
-__________________________________________\e[0m "
+________________________________________\e[0m "
 printf "
 
-       [ 1 ] Continuar.
-       [ 2 ] Menu principal.
-       [ 3 ] Salir."
-
-read -p "
-
-opcion >> " etc
+      \e[1;35m [\e[0m 1 \e[1;35m] \e[0mContinuar.
+      \e[1;35m [\e[0m 2 \e[1;35m] \e[0mMenu principal.
+      \e[1;35m [\e[0m 3 \e[1;35m] \e[0mSalir."
+echo
+echo
+read -p $'   \e[1;31mcom\e[0man\e[1;31mdos >> \e[0m ' etc
 
 case $etc in
 	1)
+		cd ..
 		bash snacklab.sh
 		;;
 	2)
+		cd ..
 		bash snacklab.sh
 		;;
 	3)

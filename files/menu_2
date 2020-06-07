@@ -2,4 +2,12 @@
 
 figlet Hacking facebook
 
+printf "
 
+  Escoje una herramienta para hacer el phising:
+
+
+    [ 1 ] shellphish
+    [ 2 ] socialsploit
+    [ 3 ] snacklab
+    [ 4 ] "

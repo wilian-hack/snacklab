@@ -1,5 +1,4 @@
 #!/data/data/com.termux/files/usr/bin/bash
-clear
 sleep 0.5
 printf "\e[1;31m
  
@@ -18,37 +17,37 @@ echo ""
 printf "\e[1;32m  LIBROS DISPONIBLES:\e[0m"
 echo ""
 printf "
-  \e[1;31m [\e[0m 1 \e[1;31m] \e[0mProgramacion en bash."
+  \e[1;31m [\e[0m 1 \e[1;31m] \e[0mProgramacion en bash.       > PDF"
   sleep 0.1
   printf "
-  \e[1;31m [\e[0m 2\e[1;31m ] \e[0mProgramacion en python."
+  \e[1;31m [\e[0m 2\e[1;31m ] \e[0mProgramacion en python.     > PDF"
   sleep 0.1
   printf "
-  \e[1;31m [\e[0m 3\e[1;31m ] \e[0mHacking etico 101."
+  \e[1;31m [\e[0m 3\e[1;31m ] \e[0mPhishing 2017.              > PDF"
   sleep 0.1
   printf "
-  \e[1;31m [\e[0m 4\e[1;31m ] \e[0mProgramacion en php."
+  \e[1;31m [\e[0m 4\e[1;31m ] \e[0mProgramacion en php.        > PDF"
   sleep 0.1
   printf "
-  \e[1;31m [\e[0m 5\e[1;31m ] \e[0mHacking desde cero." 
+  \e[1;31m [\e[0m 5\e[1;31m ] \e[0mHacking desde cero.         > PDF"
   sleep 0.1
   printf "
-  \e[1;31m [\e[0m 6\e[1;31m ] \e[0mVirus informaticos."
+  \e[1;31m [\e[0m 6\e[1;31m ] \e[0mVirus informaticos.         > PDF"
   sleep 0.1
   printf "
-  \e[1;31m [\e[0m 7\e[1;31m ] \e[0mAtaques ciberneticos."
+  \e[1;31m [\e[0m 7\e[1;31m ] \e[0mAtaques ciberneticos.       > PDF"
   sleep 0.1
   printf "
-  \e[1;31m [\e[0m 8\e[1;31m ] \e[0mVirus y spam."
+  \e[1;31m [\e[0m 8\e[1;31m ] \e[0mProgramacion html.          > PDF"
   sleep 0.1
   printf "
-  \e[1;31m [\e[0m 9\e[1;31m ] \e[0mJava desde cero."
+  \e[1;31m [\e[0m 9\e[1;31m ] \e[0mJava desde cero.            > PDF"
   sleep 0.1
   printf "
-  \e[1;31m[\e[0m 10\e[1;31m ] \e[0mLa caza hackers."
+  \e[1;31m[\e[0m 10\e[1;31m ] \e[0mLa caza hackers.            > PDF"
   sleep 0.1
   printf "
-  \e[1;31m[\e[0m 11\e[1;31m ] \e[0mChema alonso."
+  \e[1;31m[\e[0m 11\e[1;31m ] \e[0mChema alonso.               > PDF"
   sleep 0.1
   printf "
   \e[1;31m[\e[0m 12\e[1;31m ] \e[0mSalir."
@@ -56,7 +55,67 @@ printf "
   echo
   sleep 0.1
 read -p $' \e[1;31m🎭An๏\e[0mnym\e[1;31m๏uร🎭>> \e[0m' libros
-apt install termux-open
+
 
 case $libros in
 	1)
+		termux-open programacionbash.pdf
+		sleep 6
+		bash menu_7
+		;;
+	2)
+	        termux-open programacionpython.pdf
+		sleep 6
+		bash menu_7
+ 		;;
+	3)
+		termux-open phishing2017.pdf
+		sleep 6
+		bash menu_7
+		;;
+	4)
+		termux-open programacionphp.pdf
+		sleep 6
+		bash menu_7
+                ;;
+        5)
+                termux-open hackingdesdecero.pdf
+		sleep 6
+		bash menu_7
+                ;;
+        6)
+                termux-open virusinformaticos.pdf
+		sleep 6
+		bash menu_7
+		;;
+	7)
+                termux-open ataquesciberneticos.pdf
+		sleep 6
+		bash menu_7
+                ;;
+        8)
+                termux-open programacionhtml.pdf
+		sleep 6
+		bash menu_7
+                ;;
+        9)
+		termux-open javadesdecero.pdf
+		sleep 6
+		bash menu_7
+		;;
+        10)
+                termux-open lacazahackers.pdf
+		sleep 6
+		bash menu_7
+                ;;
+        11)
+		termux-open chemaalonso.pdf 
+		sleep 6
+		bash menu_7
+		;;
+
+	12)
+		exit
+		;;
+
+esac

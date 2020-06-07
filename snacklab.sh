@@ -17,7 +17,7 @@
 #   \e[0;1m    = White
 #   \e[31m     = Rojo
 #   \e[36;1m   = celeste
-
+apt install termux-open
 sleep 1
 clear
 printf "\e[1;90m
@@ -83,7 +83,6 @@ case $anonimous in
 		;;
 	7)	
 		sleep 1
-		clear
 		cd files
 		bash menu_7
 		;;
@@ -96,6 +95,7 @@ case $anonimous in
 	9)
 		sleep 1
 		clear
+		cd files
 		bash menu_9
 		;;
 	10)
