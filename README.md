@@ -1,2 +1,5 @@
 # snacklab v2.0
-Snacklab es un laboratorio que te ayudará a aprender sobre el uso de termux también tiene  
+Snacklab es un laboratorio que te ayudará a aprender 
+sobre el uso de termux también tiene herramientas de 
+phishing como capturar la camara de tu víctima el 
+audio,  
